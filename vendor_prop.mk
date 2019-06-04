@@ -68,7 +68,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.hw.binder.size_kbyte=1024
-
-#Density
+	
+# Add an extra 20% saturation to display colors
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=440
+    persist.sys.sf.color_saturation=1.2
+	
